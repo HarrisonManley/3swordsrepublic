@@ -314,7 +314,6 @@ display: inline;
 }
 
 
-
 @media (max-width:756px) {
   .navBar > .nav-btn {
     display: inline-block;
@@ -365,12 +364,29 @@ display: inline;
 }
 
 @media (max-width:480px) {
+.navBar > .nav-btn {
+    display: inline-block;
+    position: relative;
+  }
   .navBar > .nav-btn > label {
     display: inline-block;
     width: 20px;
     height: 20px;
     padding: 7px;
     margin-bottom: 20px;
+  }
+  .navBar > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    cursor: pointer;
+    border-top: white;
+    color: rgb(255, 255, 255);
+    
+  }
+  .navBar > .nav-btn > label > span {
+    display: block;
+    width: 20px;
+    height: 7px;
+    border-top: 2px solid rgb(8, 8, 8);
+    color: black;
   }
 .navBar > .nav-links {
   position: absolute;
@@ -379,7 +395,7 @@ display: inline;
   height: 0px;
   transition: all 0.3s ease-in;
   overflow-y: scroll;
-  top: 70px;
+  top: 80px;
   left: 0;
 }
 .navBar > .nav-links > a {
