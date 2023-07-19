@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Angel rhapsody';
+    src: url('Angelrhapsody-Regular.eot');
+    src: url('Angelrhapsody-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Angelrhapsody-Regular.woff2') format('woff2'),
+        url('Angelrhapsody-Regular.woff') format('woff'),
+        url('Angelrhapsody-Regular.ttf') format('truetype'),
+        url('Angelrhapsody-Regular.svg#Angelrhapsody-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hardinge Free Trial';
+    src: url('HardingeFreeTrial.eot');
+    src: url('HardingeFreeTrial.eot?#iefix') format('embedded-opentype'),
+        url('HardingeFreeTrial.woff2') format('woff2'),
+        url('HardingeFreeTrial.woff') format('woff'),
+        url('HardingeFreeTrial.ttf') format('truetype'),
+        url('HardingeFreeTrial.svg#HardingeFreeTrial') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
