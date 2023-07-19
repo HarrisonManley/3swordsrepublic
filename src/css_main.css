@@ -1,9 +1,8 @@
 
 h1 {
-  color : white;
+  color : black;
   font-size: 3.5em;
-  font-family: 'Hardinge Free Trial';
-  font-weight: lighter;;
+  font-family: 'London';
   float: left;
   margin-bottom: 20px;
   margin-top: 0;
@@ -17,9 +16,9 @@ h1:hover{
   text-decoration: underline;
 }
 h2 {
-  color : white;
+  color : black;
   font-size: 2em;
-  font-family: 'Hardinge Free Trial';
+  font-family: 'London';
   font-weight: lighter;
   padding-top: 10px;
   padding-left: 20px;
@@ -34,9 +33,9 @@ h2:hover{
 }
 
 h3 {
-  color : white;
+  color : black;
   font-size: 2em;
-  font-family: 'Hardinge Free Trial';
+  font-family: 'London';
   font-weight: lighter;
   padding-top: 10px;
   padding-left: 20px;
@@ -72,8 +71,17 @@ h3:hover{
   font-display: swap;
   color: green;
 }
+
+@font-face {
+  font-family: 'London';
+  src: url('Fonts/London/London\ Bitmap.otf') format('opentype');
+  font-weight: lighter;
+  font-style: normal;
+  font-display: swap;
+  color: Black;
+}
 p {
-  color : white;
+  color : black;
   font-size: 0.75em;
   font-family: 'larabie';
   position: relative;
@@ -130,7 +138,7 @@ filter: url('#fractal-noise3');
 
 
 body {
-  background-image: url('BlackBackground.png');
+  background-image: url('img/background/paper-background-2.jpg');
   background-repeat:repeat;
   background-attachment: scroll;
   font-family: 'larabie';
@@ -155,7 +163,7 @@ li {
 a {
   padding-left: 10px;
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 
@@ -183,12 +191,12 @@ li :hover{
   display: inline-block;
   padding: 5px 5px 5px 5px;
   text-decoration: none;
-  color:white;
+  color:black;
   
   }
   
   .navBar > .nav-links > a:hover {
-  background-color: white;
+  background-color: black;
   }
 
 .navBar > .nav-btn,
@@ -383,7 +391,7 @@ display: inline;
 }
 
 h4 {
-  color : white;
+  color : black;
   font-size: 2em;
   font-family: 'Hardinge Free Trial';
   font-weight: lighter;
@@ -403,7 +411,7 @@ h4 {
     height: 7px;
     padding: 10px;
     margin-bottom: 20px;
-    color: white;
+    color: black;
   }
   .navBar > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
     cursor: pointer;
@@ -456,7 +464,7 @@ h4 {
       transform: translate(-50%, -50%);
     }
   h4 {
-  color : white;
+  color : black;
   font-size: 2em;
   font-family: 'Hardinge Free Trial';
   font-weight: lighter;

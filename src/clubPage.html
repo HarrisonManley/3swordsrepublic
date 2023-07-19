@@ -34,15 +34,100 @@
                             <a href="aboutPage.html">Home</a>
                         </li>
                         <li>
-                            <a href="clubPage.html">Event posters</a>
+                            <a href="clubPage.html">Events</a>
                         </li>
-                        
                         <li>
-                            <a href="radioArtwork.html">Archive</a>
+                            <a href="releases.html">Releases</a>
+                        </li>
+                        <li>
+                            <a href="radio.html">Radio</a>
                         </li>
                     </ul>
                 </div>
             </div>
+            <div class="line-break"></div>
+         
+            <div class="textContainer">   
+                <div class="textbox">
+                    <p id="type-text"></p>
+                    <p id="type-text-2"></p>
+                    
+                    <script>
+                        var i = 0;
+                        var txt = 'Legend has it that these paintings were stolen long ago by Trash Bandicoots hoardes.';
+                        var txt_0 = 'The bards sing of a time when music played and drinks flowed,';
+                        var txt_1 = "we may live in hope that such a time will be upon us soon.";
+                        var txt_2 = "For now please enjoy what we have, I cannot say much more..."
+                        var speed = 20;
+                        var break_speed = 5;
+                        var j = 0;
+                        var k = 0;
+                        var l = 0;
+                        var m = 0;
+                        var n = 0;
+                        var q = 0;
+
+                        typeMyText();
+
+                        typeMyText2();
+                        function typeMyText() {
+                            if (i < txt.length) {
+                                document.getElementById("type-text").innerHTML += txt.charAt(i);
+                                i++;
+                                setTimeout(typeMyText, speed);
+                            }
+                            else if (i < (txt.length * 2)){
+                                i++;
+                                setTimeout(typeMyText, break_speed);
+                            }
+                            if (i >= (txt.length * 2)){
+                                if (j < txt_2.length) {
+                                    document.getElementById("type-text").innerHTML += txt_2.charAt(j);
+                                    j++;
+                                    setTimeout(typeMyText, speed*(3/4));
+                                }
+                            }
+                        }
+
+                        function typeMyText2() {
+                            if (k < (txt.length + txt_2.length)) {
+                                k++;
+                                setTimeout(typeMyText2, speed*(3/4));
+                            }
+                            if (k >= (txt.length + txt_2.length)) {
+                                if (l < txt_3.length) {
+                                    document.getElementById("type-text-2").innerHTML += txt_3.charAt(l);
+                                    l++;
+                                    setTimeout(typeMyText2, speed);
+                                    }
+                                else if (l < (txt_3.length * 2)){
+                                    l++;
+                                    setTimeout(typeMyText2, break_speed);
+                                    }
+                                if (l >= (txt_3.length * 2)){
+                                    if (m < txt_4.length) {
+                                        document.getElementById("type-text-2").innerHTML += txt_4.charAt(m);
+                                        m++;
+                                        setTimeout(typeMyText2, speed);
+                                    }
+                                    else if (m < (txt_4.length * 2)){
+                                        m++;
+                                        setTimeout(typeMyText2, break_speed);
+                                        }
+                                    if (m >= (txt_4.length * 2)){
+                                        if (q < txt_5.length) {
+                                            document.getElementById("type-text-2").innerHTML += txt_5.charAt(q);
+                                            q++;
+                                            setTimeout(typeMyText2, speed);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+               
+                    </script>
+                 
+                </div>
             <div class="linebreak"></div>
             <div class="ImageContainer">  
                 <div class="container" id="mainImageContainer">

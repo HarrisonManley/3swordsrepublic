@@ -1,0 +1,398 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>3 Swords Republic</title>
+        <meta charset = "UTF-8">
+        <meta name="author" content="Harry Manley">
+        <link href="https://fonts.googleapis.com/css?family=Actor" rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="css_main.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    </head>
+    
+
+    <body>
+
+        <svg version="1.1" width="0" height="0">
+            <filter id="fractal-noise3">
+                <feTurbulence type="fractalNoise" baseFrequency="0.009 0.102" numOctaves="2" result="warp" />
+                <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="37" in="SourceGraphic" in2="warp" />
+            </filter>
+        </svg>
+        <div class="mainContainer">
+           <a href="aboutPage.html">
+            <h1> 3 Swords Republic </h1>
+        </a>
+
+            <div class="navBar">
+                <input type="checkbox" id="nav-check">
+                <div class="nav-btn">
+                    <label for="nav-check">
+                        <img src="Images/nav-Icon.png" class="nav-btn" style="height: 1em;">
+                    </label>
+                    
+                </div>
+                <div class="nav-links">
+                    <ul>
+                        <li>
+                            <a href="aboutPage.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="clubPage.html">Events</a>
+                        </li>
+                        <li>
+                            <a href="releases.html">Releases</a>
+                        </li>
+                        <li>
+                            <a href="radio.html">Radio</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="line-break"></div>
+         
+            <div class="textContainer">   
+                <div class="textbox">
+                    <p id="type-text"></p>
+                    <p id="type-text-2"></p>
+                    
+                    <script>
+                        var i = 0;
+                        var txt = 'A feast for the ears! Listen as the residents of the 3 Swords Republic take you on a audible journey through the beautiful barren landscapes.';
+                        var speed = 20;
+                        var break_speed = 5;
+                        var j = 0;
+                        var k = 0;
+                        var l = 0;
+                        var m = 0;
+                        var n = 0;
+                        var q = 0;
+
+                        typeMyText();
+
+                        typeMyText2();
+                        function typeMyText() {
+                            if (i < txt.length) {
+                                document.getElementById("type-text").innerHTML += txt.charAt(i);
+                                i++;
+                                setTimeout(typeMyText, speed);
+                            }
+                            else if (i < (txt.length * 2)){
+                                i++;
+                                setTimeout(typeMyText, break_speed);
+                            }
+                            if (i >= (txt.length * 2)){
+                                if (j < txt_2.length) {
+                                    document.getElementById("type-text").innerHTML += txt_2.charAt(j);
+                                    j++;
+                                    setTimeout(typeMyText, speed*(3/4));
+                                }
+                            }
+                        }
+
+                        function typeMyText2() {
+                            if (k < (txt.length + txt_2.length)) {
+                                k++;
+                                setTimeout(typeMyText2, speed*(3/4));
+                            }
+                            if (k >= (txt.length + txt_2.length)) {
+                                if (l < txt_3.length) {
+                                    document.getElementById("type-text-2").innerHTML += txt_3.charAt(l);
+                                    l++;
+                                    setTimeout(typeMyText2, speed);
+                                    }
+                                else if (l < (txt_3.length * 2)){
+                                    l++;
+                                    setTimeout(typeMyText2, break_speed);
+                                    }
+                                if (l >= (txt_3.length * 2)){
+                                    if (m < txt_4.length) {
+                                        document.getElementById("type-text-2").innerHTML += txt_4.charAt(m);
+                                        m++;
+                                        setTimeout(typeMyText2, speed);
+                                    }
+                                    else if (m < (txt_4.length * 2)){
+                                        m++;
+                                        setTimeout(typeMyText2, break_speed);
+                                        }
+                                    if (m >= (txt_4.length * 2)){
+                                        if (q < txt_5.length) {
+                                            document.getElementById("type-text-2").innerHTML += txt_5.charAt(q);
+                                            q++;
+                                            setTimeout(typeMyText2, speed);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+               
+                    </script>
+                 
+                </div>
+                <h3> Radio</h3>
+                    <div class="row">
+                        <div class="column">
+                            <div class="container" id="imageContainer">
+                                <a href="https://soundcloud.com/aajaradio/3-swords-republic-presents-the-bay-orc-tavern-w-izwav-aaja-channel-1-23-06-23?si=77577983bebf4ad2b8016d6c96fc85c6&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">
+                                    <div class="hvrbox">
+                                        <img src='img/BOT/BOT June Fig Insta Square.jpg' id="radioImage">
+                                        <div class="hvrbox-layer_top">
+                                            <div class="hvrbox-text">
+                                                <h4> 3 Swords Republic on Aaja Radio</h4>
+                                                   <p> Join Fig for the fourth 
+                                                    installment of the 3 Swords Republic show on Aaja Radio. </p>
+                                            </div>
+                                            
+                                          `
+                                            <div class="hvrbox-text_mobile">
+                                                <h4> 3 Swords Republic on Aaja Radio</h4>
+                                                   <p> Join Fig for the fourth 
+                                                    installment of the 3 Swords Republic show on Aaja Radio. </p>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="container" id="imageContainer">
+                                <a href="https://soundcloud.com/aajaradio/3-swords-republic-presents-the-bay-orc-tavern-w-izwav-aaja-channel-1-26-05-23?si=95138d888e524999a1fb4aea1aeed97c&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">
+                                    <div class="hvrbox">
+                                        <img src='img/BOT/BOT May Iz.wav Insta Square.jpg' id="radioImage">
+                                        <div class="hvrbox-layer_top">
+                                            <div class="hvrbox-text">
+                                                <h4> 3 Swords Republic on Aaja Radio</h4>
+                                                   <p> Join Iz.wav for the third 
+                                                    installment of the 3 Swords Republic show on Aaja Radio. </p>
+                                            </div>
+                                            
+                                            <div class="hvrbox-text_mobile">
+                                                <h4> 3 Swords Republic on Aaja Radio</h4>
+                                                    <p> Join Iz.wav for the third 
+                                                    installment of the 3 Swords Republic show on Aaja Radio. </p>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    <div class="row">
+                        <div class="column">
+                            <div class="container" id="imageContainer">
+                                <a href="https://soundcloud.com/aajaradio/3-swords-republic-presents-the-bay-orc-tavern-w-scud-aaja-channel-1-28-04-23?si=916cb315ed6c4dde96ed3b2db0a75d80&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">
+                                    <div class="hvrbox">
+                                        <img src='img/BOT/BOT April Scud Insta Square.jpg' id="radioImage">
+                                        <div class="hvrbox-layer_top">
+                                            <div class="hvrbox-text">
+                                                <h4> 3 Swords Republic on Aaja Radio</h4>
+                                                   <p> Join scud for the second 
+                                                    installment of the 3 Swords Republic show on Aaja Radio. </p>
+                                            </div>
+                                            
+                                            <div class="hvrbox-text_mobile">
+                                                <h4> 3 Swords Republic on Aaja Radio</h4>
+                                                   <p> Join scud for the second 
+                                                    installment of the 3 Swords Republic show on Aaja Radio. </p>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="container" id="imageContainer">
+                                <a href="https://soundcloud.com/aajaradio/3-swords-republic-presents-the-bay-orc-tavern-w-sid-man-aaja-channel-1-24-03-23?si=1cd82b1ac12a4518b20c5f534b5625b3&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank">
+                                    <div class="hvrbox">
+                                        <img src='img/BOT/OBT March Sid Man Insta Square .jpg' id="radioImage">
+                                        <div class="hvrbox-layer_top">
+                                            <div class="hvrbox-text">
+                                                <h4> 3 Swords Republic on Aaja Radio</h4>
+                                                   <p> Join Sid Man for the first 
+                                                    installment of the 3 Swords Republic show on Aaja Radio. </p>
+                                            </div>
+                                            
+                                          `
+                                            <div class="hvrbox-text_mobile">
+                                                <h4> 3 Swords Republic on Aaja Radio</h4>
+                                                   <p> Join Sid Man for the first 
+                                                    installment of the 3 Swords Republic show on Aaja Radio. </p>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    <div class="row">
+                        <div class="column">
+                            <div class="container" id="imageContainer">
+                                <a href="https://soundcloud.com/balamii/3-swords-republic-march-2022" target="_blank">
+                                    <div class="hvrbox">
+                                        <img src='Images/kier_and_sidman.png' id="radioImage">
+                                        <div class="hvrbox-layer_top">
+                                            <div class="hvrbox-text">
+                                                <h4> 3 Swords Republic on Balamii Radio</h4>
+                                                    <p>Sid Man & Kier go B2B for the monthly 
+                                                    installment of the 3 Swords Republic show on Balamii.</p>
+                                            </div>
+                                            
+                                            <div class="hvrbox-text_mobile">
+                                                <h4> 3 Swords Republic on Balamii Radio</h4>
+                                                 <p>Sid Man & Kier go B2B for the monthly 
+                                                installment of the 3 Swords Republic show on Balamii.</p>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="container" id="imageContainer">
+                                <a href="https://soundcloud.com/balamii/3-swords-republic-w-sid-man-february-2022" target="_blank">
+                                    <div class="hvrbox">
+                                        <img src='Images/barkbark.jpg' id="radioImage">
+                                        <div class="hvrbox-layer_top">
+                                            <div class="hvrbox-text">
+                                                <h4> 3 Swords Republic on Balamii Radio</h4>
+                                                   <p> Join a solo Sid Man for the monthly 
+                                                    installment of the 3 Swords Republic show on Balamii. </p>
+                                            </div>
+                                            
+                                          `
+                                            <div class="hvrbox-text_mobile">
+                                                <h4> 3 Swords Republic on Balamii Radio</h4>
+                                                <p>Join a solo Sid Man for the monthly 
+                                                installment of the 3 Swords Republic show on Balamii.</p>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column">
+                                <div class="container" id="imageContainer">
+                                    <a href="https://soundcloud.com/balamii/3-swords-republic-w-sid-man-dj-surge-december-2021" target="_blank">
+                                        <div class="hvrbox">
+                                            <img src='Images/Sid Man.jpeg' id="radioImage">
+                                            <div class="hvrbox-layer_top">
+                                                <div class="hvrbox-text">
+                                                    <h4> 3 Swords Republic on Balamii Radio</h4>
+                                                        <p>December's radio show featured a hot af guest mix from label friend and soon to be collaborator,
+                                                         Tblisi's own DJ Surge.</p>
+                                                </div>
+                                                <div class="hvrbox-text_mobile">
+                                                    <h4> 3 Swords Republic on Balamii Radio</h4>
+                                                    <p>December featured a hot af guest mix from Tblisi's own DJ Surge.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        
+                            <div class="column">
+                                <div class="container" id="imageContainer">
+                                    <a href="https://soundcloud.com/balamii/3-swords-republic-w-sid-man-november-2021" target="_blank">
+                                        <div class="hvrbox">
+                                            <img src='Images/sidmanNovember.png' id="radioImage">
+                                            <div class="hvrbox-layer_top">
+                                                <div class="hvrbox-text">
+                                                    <h4> 3 Swords Republic on Balamii Radio</h4>
+                                                       <p> November on Balamii radio, listen back for Sid Man's luscious bits </p>
+                                                </div>
+                                                <div class="hvrbox-text_mobile">
+                                                    <h4> 3 Swords Republic on Balamii Radio</h4>
+                                                   <p> November on Balamii radio, listen back for Sid Man's luscious bits</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        <div class="row">
+                            <div class="column">
+                                <div class="container" id="imageContainer">
+                                    <a href="https://soundcloud.com/balamii/3-swords-republic-w-kier-tellamont-october-2021" target="_blank">
+                                        <div class="hvrbox">
+                                            <img src='Images/kier_october.png' id="radioImage">
+                                            <div class="hvrbox-layer_top">
+                                                <div class="hvrbox-text">
+                                                    <h4> 3 Swords Republic on Balamii Radio</h4>
+                                                       <p> October featured a hot af guest mix from Tellamont</p>
+                                                </div>
+                                                <div class="hvrbox-text_mobile">
+                                                    <h4> 3 Swords Republic on Balamii Radio</h4>
+                                                    <p>October featured a hot af guest mix from Tellamont</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        
+                            <div class="column">
+                                <div class="container" id="imageContainer">
+                                    <a href="https://soundcloud.com/balamii/3-swords-republic-w-sid-man-september-2021" target="_blank">
+                                        <div class="hvrbox">
+                                            <img src='Images/simanSeptember.png' id="radioImage">
+                                            <div class="hvrbox-layer_top">
+                                                <div class="hvrbox-text">
+                                                    <h4> 3 Swords Republic on Balamii Radio</h4>
+                                                       <p> Join a solo Sid Man for the monthly 
+                                                        installment of the 3 Swords Republic show on Balamii.</p>
+                                                </div>
+                                                <div class="hvrbox-text_mobile">
+                                                    <h4> 3 Swords Republic on Balamii Radio</h4> 
+                                                   <p> Join a solo Sid Man for the monthly 
+                                                    installment of the 3 Swords Republic show on Balamii.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                               
+                    </div>
+                </div>
+        </div>
+        </div>
+        <div class="linebreak"></div>
+    
+        <div class="icons">
+            <a href="https://www.instagram.com/3_swords_republic/" target="_blank">
+                <div class="insta">
+                    <img class="insta" src='Images/instagram2.png'>           
+                    <img class="insta-top" src='Images/instagram.png'>
+                </div>
+            </a>
+            <a href="https://www.facebook.com/3swordsrepublic" target="_blank">
+                <div class="insta">
+                    <img class="insta" src='Images/facebook1.png'>
+                    <img class="insta-top" src='Images/facebook2.png'>
+                </div>
+            </a>
+            <a href="https://soundcloud.com/3-swords-republic" target="_blank">
+                <div class="insta">
+                    <img class="insta" src='Images/soundcloud2.png'>
+                    <img class="insta-top" src='Images/soundcloud.png'>
+                </div>
+            </a>
+            <a href="mailto:3swordsrepublic@gmail.com" target="_blank">
+                <div class="insta">
+                    <img class="insta" src='Images/gmail2.png'>
+                    <img class="insta-top" src='Images/gmail1.png'>
+                </div>
+            </a>
+        </div>
+    
+    
+    </body>
+
+
+</html>
