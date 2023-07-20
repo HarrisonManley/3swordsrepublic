@@ -50,28 +50,21 @@
                      </ul>
                  </div>
              </div>
-             <div class="line-break"></div>
           
              <div class="textContainer">   
                  <div class="textbox">
                      <p id="type-text"></p>
-                     <p id="type-text-2"></p>
                      
                      <script>
                          var i = 0;
-                         var txt = 'A feast for the ears! Listen as the residents of the 3 Swords Republic take you on a audible journey through the beautiful barren landscapes.';
+                         var j = 0;
+                         var txt = 'Congratulations traveller... you have found the pot of gold, but be warned: ';
+                         var txt_0 = 'these potions are too strong for a beast let alone a man.'
                          var speed = 20;
                          var break_speed = 5;
-                         var j = 0;
-                         var k = 0;
-                         var l = 0;
-                         var m = 0;
-                         var n = 0;
-                         var q = 0;
  
                          typeMyText();
  
-                         typeMyText2();
                          function typeMyText() {
                              if (i < txt.length) {
                                  document.getElementById("type-text").innerHTML += txt.charAt(i);
@@ -83,46 +76,10 @@
                                  setTimeout(typeMyText, break_speed);
                              }
                              if (i >= (txt.length * 2)){
-                                 if (j < txt_2.length) {
-                                     document.getElementById("type-text").innerHTML += txt_2.charAt(j);
+                                 if (j < txt_0.length) {
+                                     document.getElementById("type-text").innerHTML += txt_0.charAt(j);
                                      j++;
-                                     setTimeout(typeMyText, speed*(3/4));
-                                 }
-                             }
-                         }
- 
-                         function typeMyText2() {
-                             if (k < (txt.length + txt_2.length)) {
-                                 k++;
-                                 setTimeout(typeMyText2, speed*(3/4));
-                             }
-                             if (k >= (txt.length + txt_2.length)) {
-                                 if (l < txt_3.length) {
-                                     document.getElementById("type-text-2").innerHTML += txt_3.charAt(l);
-                                     l++;
-                                     setTimeout(typeMyText2, speed);
-                                     }
-                                 else if (l < (txt_3.length * 2)){
-                                     l++;
-                                     setTimeout(typeMyText2, break_speed);
-                                     }
-                                 if (l >= (txt_3.length * 2)){
-                                     if (m < txt_4.length) {
-                                         document.getElementById("type-text-2").innerHTML += txt_4.charAt(m);
-                                         m++;
-                                         setTimeout(typeMyText2, speed);
-                                     }
-                                     else if (m < (txt_4.length * 2)){
-                                         m++;
-                                         setTimeout(typeMyText2, break_speed);
-                                         }
-                                     if (m >= (txt_4.length * 2)){
-                                         if (q < txt_5.length) {
-                                             document.getElementById("type-text-2").innerHTML += txt_5.charAt(q);
-                                             q++;
-                                             setTimeout(typeMyText2, speed);
-                                         }
-                                     }
+                                     setTimeout(typeMyText, speed*(6/4));
                                  }
                              }
                          }
@@ -145,7 +102,7 @@
                                                 
                                                 Patrons of the Bay Orc Tavern joined forces with SODAA for our latest release.
                                                             </div>
-                                                    </div>
+                                           </div>
                                     </div>
                                 </a>
                             </div>
@@ -154,30 +111,41 @@
                             <div class="container" id="imageContainer">
                                 <div class="container" id="textBoxDescription">
                                     <h3> SODAA Decentralised Compilation Volume 1</h3>
-                                    <p id="type-text-3"></p>
+                                    <p id="type-text-2"></p>
                                         <script>
-                                            var hold_fire_len = txt_0.length 
-                                            var txt_0 = "Patrons of the Bay Orc Tavern joined forces with SODAA for our latest release.\
-                                            Includes a remix from our very own man dog hybrid, scud.";
+                                            var hold_fire_len = txt_0.length + txt.length
+                                            var txt_2 = "Patrons of the Bay Orc Tavern joined forces with SODAA for our latest release. ";
+                                            var txt_3 = "Includes a remix from our very own man dog hybrid, scud.";
+                                            var k = 0;
+                                            var l = 0;
+                                            var m = 0;
+                                       
                                             
-                                            var n = 0;
-                                            var x = 0;
-                                            
-                                            typeMyText3();
+                                            typeMyText2();
 
                                         
-                                            function typeMyText3() {
-                                                if (n < hold_fire_len) {
-                                                    n++;
-                                                    setTimeout(typeMyText3, speed*0.6);
+                                            function typeMyText2() {
+                                                if (k < hold_fire_len) {
+                                                    k++;
+                                                    setTimeout(typeMyText2, speed*(5/4));
                                                 }
-                                                
-                                                if (n >= hold_fire_len) {
-                                                    if (x < txt_0.length) {
-                                                        document.getElementById("type-text-3").innerHTML += txt_0.charAt(x);
-                                                        x++;
-                                                        setTimeout(typeMyText3, speed);
+                                                if (k >= (txt.length + txt_0.length)) {
+                                                    if (l < txt_2.length) {
+                                                        document.getElementById("type-text-2").innerHTML += txt_2.charAt(l);
+                                                        l++;
+                                                        setTimeout(typeMyText2, speed);
                                                         }
+                                                    else if (l < (txt_2.length * 2)){
+                                                        l++;
+                                                        setTimeout(typeMyText2, break_speed);
+                                                        }
+                                                    if (l >= (txt_2.length * 2)){
+                                                        if (m < txt_3.length) {
+                                                            document.getElementById("type-text-2").innerHTML += txt_3.charAt(m);
+                                                            m++;
+                                                            setTimeout(typeMyText2, speed);
+                                                        }
+                                                    }
                                                 }
                                             }
                                         </script>
@@ -209,32 +177,49 @@
                             <div class="container" id="imageContainer">
                                 <div class="container" id="textBoxDescription">
                                     <h3> Red Scrap Legion</h3>
-                                    <p id="type-text-4"></p>
+                                    <p id="type-text-3"></p>
                                         <script>
-                                            var hold_fire_len_1 = hold_fire_len + txt.length
-                                            var txt_1 = "The RED SCRAP LEGION launched their attack on the 28th of May. We fought valliantly, but were forced to retreat.\
+                                            var hold_fire_len_1 = hold_fire_len + txt_2.length + txt_3.length
+                                            var txt_4 = "The RED SCRAP LEGION launched their attack on the 28th of May. ";
+                                            var txt_5 = "We fought valliantly, but were forced to retreat.\
                                                          To listen to an audible rendering, follow the flags!";
-                                            
+                                            var n = 0;
+                                            var p = 0;
                                             var q = 0;
-                                            var r = 0;
                                             
-                                            typeMyText4();
+                                            typeMyText3();
 
                                         
-                                            function typeMyText4() {
-                                                if (q < hold_fire_len_1) {
-                                                    q++;
-                                                    setTimeout(typeMyText4, speed*0.6);
+                                            function typeMyText3() {
+                                                // set break before starting to type
+                                                if (n < hold_fire_len_1) {
+                                                    n++;
+                                                    setTimeout(typeMyText3, break_speed*2);
                                                 }
                                                 
-                                                if (q >= hold_fire_len_1) {
-                                                    if (r < txt_1.length) {
-                                                        document.getElementById("type-text-4").innerHTML += txt_1.charAt(r);
-                                                        r++;
-                                                        setTimeout(typeMyText4, speed);
+                                                //type the first line (txt_4)
+                                                if (n >= hold_fire_len_1) {
+                                                    if (p < txt_4.length) {
+                                                        document.getElementById("type-text-3").innerHTML += txt_4.charAt(p);
+                                                        p++;
+                                                        setTimeout(typeMyText3, speed);
+                                                        }
+                                                }
+                                                else if (p >= txt_4.length*2) {
+                                                        p++;
+                                                        setTimeout(typeMyText3, break_speed);
+                                                        }
+
+                                                if (p >= txt_4.length*2) {
+                                                    if (q < txt_5.length) {
+                                                        document.getElementById("type-text-3").innerHTML += txt_5.charAt(p);
+                                                        q++;
+                                                        setTimeout(typeMyText3, speed);
                                                         }
                                                 }
                                             }
+                                        
+                                            
                                         </script>
                     
                                 </div>

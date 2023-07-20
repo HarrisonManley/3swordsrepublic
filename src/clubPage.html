@@ -48,8 +48,6 @@
                     </ul>
                 </div>
             </div>
-            <div class="line-break"></div>
-         
             <div class="textContainer">   
                 <div class="textbox">
                     <p id="type-text"></p>
@@ -57,9 +55,9 @@
                     
                     <script>
                         var i = 0;
-                        var txt = 'Legend has it that these paintings were stolen long ago by Trash Bandicoots hoardes.';
+                        var txt = 'Legend has it that these paintings were stolen long ago by Trash Bandicoots hoardes. ';
                         var txt_0 = 'The bards sing of a time when music played and drinks flowed,';
-                        var txt_1 = "we may live in hope that such a time will be upon us soon.";
+                        var txt_1 = "we may live in hope that such a time will be upon us soon. ";
                         var txt_2 = "For now please enjoy what we have, I cannot say much more..."
                         var speed = 20;
                         var break_speed = 5;
@@ -87,7 +85,7 @@
                                 if (j < txt_2.length) {
                                     document.getElementById("type-text").innerHTML += txt_2.charAt(j);
                                     j++;
-                                    setTimeout(typeMyText, speed*(3/4));
+                                    setTimeout(typeMyText, speed*(6/4));
                                 }
                             }
                         }
