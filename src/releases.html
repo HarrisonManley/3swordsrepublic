@@ -19,37 +19,118 @@
             </filter>
         </svg>
         <div class="mainContainer">
-           <a href="aboutPage.html">
-            <h1> 3 Swords Republic </h1>
-            </a>
-
-            <div class="navBar">
-                <input type="checkbox" id="nav-check">
-                <div class="nav-btn">
-                    <label for="nav-check">
-                        <img src="Images/nav-Icon.png" class="nav-btn" style="height: 1em;">
-                    </label>
-                    
-                </div>
-                <div class="nav-links">
-                    <ul>
+            <a href="aboutPage.html">
+             <h1> 3 SWORDS REPUBLIC </h1>
+         </a>
+ 
+             <div class="navBar">
+                 <div class="nav-links">
+                     <ul>
                         <li>
-                            <a href="aboutPage.html">Home</a>
+                            -
                         </li>
                         <li>
                             <a href="clubPage.html">Events</a>
                         </li>
                         <li>
+                            -
+                        </li>
+                        <li>
                             <a href="releases.html">Releases</a>
+                        </li>
+                        <li>
+                            -
                         </li>
                         <li>
                             <a href="radio.html">Radio</a>
                         </li>
-                    </ul>
-                </div>
-            </div>
-            </div>
-                <div class="columnImgContainer">
+                        <li>
+                            -
+                        </li>
+                     </ul>
+                 </div>
+             </div>
+             <div class="line-break"></div>
+          
+             <div class="textContainer">   
+                 <div class="textbox">
+                     <p id="type-text"></p>
+                     <p id="type-text-2"></p>
+                     
+                     <script>
+                         var i = 0;
+                         var txt = 'A feast for the ears! Listen as the residents of the 3 Swords Republic take you on a audible journey through the beautiful barren landscapes.';
+                         var speed = 20;
+                         var break_speed = 5;
+                         var j = 0;
+                         var k = 0;
+                         var l = 0;
+                         var m = 0;
+                         var n = 0;
+                         var q = 0;
+ 
+                         typeMyText();
+ 
+                         typeMyText2();
+                         function typeMyText() {
+                             if (i < txt.length) {
+                                 document.getElementById("type-text").innerHTML += txt.charAt(i);
+                                 i++;
+                                 setTimeout(typeMyText, speed);
+                             }
+                             else if (i < (txt.length * 2)){
+                                 i++;
+                                 setTimeout(typeMyText, break_speed);
+                             }
+                             if (i >= (txt.length * 2)){
+                                 if (j < txt_2.length) {
+                                     document.getElementById("type-text").innerHTML += txt_2.charAt(j);
+                                     j++;
+                                     setTimeout(typeMyText, speed*(3/4));
+                                 }
+                             }
+                         }
+ 
+                         function typeMyText2() {
+                             if (k < (txt.length + txt_2.length)) {
+                                 k++;
+                                 setTimeout(typeMyText2, speed*(3/4));
+                             }
+                             if (k >= (txt.length + txt_2.length)) {
+                                 if (l < txt_3.length) {
+                                     document.getElementById("type-text-2").innerHTML += txt_3.charAt(l);
+                                     l++;
+                                     setTimeout(typeMyText2, speed);
+                                     }
+                                 else if (l < (txt_3.length * 2)){
+                                     l++;
+                                     setTimeout(typeMyText2, break_speed);
+                                     }
+                                 if (l >= (txt_3.length * 2)){
+                                     if (m < txt_4.length) {
+                                         document.getElementById("type-text-2").innerHTML += txt_4.charAt(m);
+                                         m++;
+                                         setTimeout(typeMyText2, speed);
+                                     }
+                                     else if (m < (txt_4.length * 2)){
+                                         m++;
+                                         setTimeout(typeMyText2, break_speed);
+                                         }
+                                     if (m >= (txt_4.length * 2)){
+                                         if (q < txt_5.length) {
+                                             document.getElementById("type-text-2").innerHTML += txt_5.charAt(q);
+                                             q++;
+                                             setTimeout(typeMyText2, speed);
+                                         }
+                                     }
+                                 }
+                             }
+                         }
+                
+                     </script>
+                  
+                 </div>
+                    <div class="columnImgContainer">
                     <h3> Releases</h3>
                     <div class="row">
                         <div class="column">
@@ -75,7 +156,7 @@
                                     <h3> SODAA Decentralised Compilation Volume 1</h3>
                                     <p id="type-text-3"></p>
                                         <script>
-                                            var hold_fire_len = txt.length + txt_2.length + txt_3.length + txt_4.length 
+                                            var hold_fire_len = txt_0.length 
                                             var txt_0 = "Patrons of the Bay Orc Tavern joined forces with SODAA for our latest release.\
                                             Includes a remix from our very own man dog hybrid, scud.";
                                             
@@ -130,7 +211,7 @@
                                     <h3> Red Scrap Legion</h3>
                                     <p id="type-text-4"></p>
                                         <script>
-                                            var hold_fire_len_1 = hold_fire_len + txt_0.length
+                                            var hold_fire_len_1 = hold_fire_len + txt.length
                                             var txt_1 = "The RED SCRAP LEGION launched their attack on the 28th of May. We fought valliantly, but were forced to retreat.\
                                                          To listen to an audible rendering, follow the flags!";
                                             
@@ -161,6 +242,7 @@
                         </div>
                     </div>
                 </div>
+            </div>
         </div>
         <div class="linebreak"></div>
         <div class="icons">

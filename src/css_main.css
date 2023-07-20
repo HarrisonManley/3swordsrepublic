@@ -3,7 +3,7 @@ h1 {
   color : black;
   font-size: 3.5em;
   font-family: 'London';
-  float: left;
+  text-align: center;
   margin-bottom: 20px;
   margin-top: 0;
 }
@@ -44,7 +44,7 @@ h3 {
 }
 h3:hover{
   outline: white;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3);
   -webkit-filter: url('#fractal-noise3');
   filter: url('#fractal-noise3');
 }
@@ -80,6 +80,15 @@ h3:hover{
   font-display: swap;
   color: Black;
 }
+
+@font-face {
+  font-family: 'LondonCrossStitch';
+  src: url('Fonts/London/London\ CrossStitch.otf') format('opentype');
+  font-weight: lighter;
+  font-style: normal;
+  font-display: swap;
+  color: Black;
+}
 p {
   color : black;
   font-size: 0.75em;
@@ -89,6 +98,8 @@ p {
   padding: 10px;
   width: fit-content;
 }
+
+
 p:after {
   content: "_";
   -webkit-animation: blink 200ms linear infinite alternate;
@@ -129,6 +140,7 @@ p:after {
 p:hover {
 -webkit-filter: url('#fractal-noise3');
 filter: url('#fractal-noise3');
+color: white;
 }
 
 /* #page_content:hover{
@@ -151,17 +163,22 @@ body {
 }
 
 .navBar{
-  float: right;
-  margin-top: 50px;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  padding-right: 5%;
 }
 
 li {
   list-style: none;
   display: inline;
-  font-size: 00.8em;
+  text-align: center;
+  font-size: 1.25em;
+  font-family: 'LondonCrossStitch';
+  padding: 2.5%;
 }
 a {
-  padding-left: 10px;
+  padding-left: 0px;
   text-decoration: none;
   color: black;
 }
@@ -188,8 +205,8 @@ li :hover{
 
 
 .navBar > .nav-links > a {
-  display: inline-block;
-  padding: 5px 5px 5px 5px;
+  text-align: center;
+  padding: 10px 10px 10px 10px;
   text-decoration: none;
   color:black;
   
@@ -198,11 +215,6 @@ li :hover{
   .navBar > .nav-links > a:hover {
   background-color: black;
   }
-
-.navBar > .nav-btn,
-.navBar > #nav-check {
-display: none;
-}
 
 #imageContainer{
 padding: 10px;
@@ -401,52 +413,7 @@ h4 {
   text-align: left;
   }
 @media (max-width:1000px) {
-  .navBar > .nav-btn {
-    display: inline-block;
-    position: relative;
-  }
-  .navBar > .nav-btn > label {
-    display: inline-block;
-    width: 20px;
-    height: 7px;
-    padding: 10px;
-    margin-bottom: 20px;
-    color: black;
-  }
-  .navBar > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
-    cursor: pointer;
-    border:  none;
-    color: white;
-    
-  }
-  .navBar > .nav-btn > label > span {
-    display: block;
-    width: 20px;
-    height: 7px;
-    border-top: 2px solid white(8, 8, 8);
-    color: white;
-  }
-  .navBar > .nav-links {
-    position: absolute;
-    display: block;
-    width: 50%;
-    height: 0px;
-    overflow-y: scroll;
-    top: 70px;
-    left: 1px;
-  }
-  .navBar > .nav-links > a {
-    display: block;
-    width: 100%;
-  }
-  .navBar > #nav-check:not(:checked) ~ .nav-links {
-    height: 0px;
-  }
-  .navBar > #nav-check:checked ~ .nav-links {
-    height: calc(100vh - 40px);
-    overflow-y: auto;
-    margin-left: 15%;
-  }
+  
   .hvrbox .hvrbox-text {
     display: none;
     }
@@ -482,7 +449,7 @@ h4 {
   body {
     background-position-x: -300px;
   }
-.navBar > .nav-btn {
+  /* .navBar > .nav-btn {
     display: inline-block;
     position: relative;
   }
@@ -493,19 +460,7 @@ h4 {
     padding: 7px;
     margin-bottom: 20px;
   }
-  .navBar > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
-    cursor: pointer;
-    border-top: white;
-    color: white(255, 255, 255);
-    
-  }
-  .navBar > .nav-btn > label > span {
-    display: block;
-    width: 20px;
-    height: 7px;
-    border-top: 2px white;
-    color: white;
-  }
+
 .navBar > .nav-links {
   position: absolute;
   display: block;
@@ -519,15 +474,8 @@ h4 {
 .navBar > .nav-links > a {
   display: block;
   width: 100%;
-}
-.navBar > #nav-check:not(:checked) ~ .nav-links {
-  height: 0px;
-}
-.navBar > #nav-check:checked ~ .nav-links {
-  height: calc(100vh - 30px);
-  overflow-y: auto;
-  margin-left: 0%;
-}
+} */
+
 .mainContainer
 {
   margin-left: 5%;
