@@ -59,7 +59,7 @@
                         var txt = 'GREETINGS FAYRE TRAVELLERE! Welcome to the THREE SWORDS REPUBLIC, a dangerous land plagued with perpetual WAR!';
                         var txt_2 = ' The Junkyard King TRASH BANDICOOT has made his grizzly intentions known; the RED SCRAP LEGIONS march on GREY CITADEL. Once the centre of a mysterious previous civilisation, the city’s ruins now have a new master, whose STONE SENTINELS stand ready to receive BANDICOOT’s hordes in battle.';
                         var txt_3 = 'Little is known of their leader, though legend foretells a fallen forest champion, whose ancient pact with THE GREEN MAN has rendered her body immortal! The sky darkens over this impending conflict; no inhabitant of the THREE SWORDS can escape its reaches. Soon, all must choose a side…';
-                        var txt_4 = ' But first, let us feast our ears! Tell your tracker to follow the footsteps of the links below, and we shall dine together before the sunrise strips us of our freedoms!';
+                        var txt_4 = ' Write your name in the book below to join us in our fight for freedom. Keep yourself safe from TRASH BANDICOOTs hoardes!';
                         var speed = 20;
                         var break_speed = 5;
                         var j = 0;
@@ -131,10 +131,38 @@
                  
                 </div>
             </div>
+            <div class="linebreak"></div>
+            <div class="book">
+                <div class="book">
+                    <img src="img/graphics/book.png" width="100%">
+                    <form id="email-form" method="post">
+                        <div class="top-left-book">
+                            <h5>Your support is very valuable</h5>
+                            <li>  
+                                <label for="name"><p2>Name:</p2></label>
+                                <input type="text" id="name" name="user_name" />
+                            </li>
+                            <li>
+                                <label for="mail"><p2>Email:</p2></label>
+                                <input type="email" id="mail" name="user_email" />
+                            </li>
+                        </div>
+                        <div class="top-right-book">
+                            <li>
+                                <label for="msg"><p2>Message:</p2></label>
+                                <textarea id="msg" name="user_message"></textarea>
+                            </li>
+                            <li class="nav-links">
+                                <button type="submit"><p2>Send</p2></button>
+                            </li>
+                        </div>
+                    </form>
+                </div>
                 
+                
+            </div>
         </div>
         <div class="linebreak"></div>
-    
         <div class="icons">
             <a href="https://www.instagram.com/3_swords_republic/" target="_blank">
                 <div class="insta">
@@ -161,7 +189,6 @@
                 </div>
             </a>
         </div>
-    
     
     </body>
 

@@ -49,6 +49,13 @@ h3:hover{
   filter: url('#fractal-noise3');
 }
 
+h5{
+  color : black;
+  font-size: 1.2em;
+  font-family: 'London';
+  font-weight: lighter;
+  text-align: left;
+}
 @font-face {
   font-family: 'Hardinge Free Trial';
   src: url('Fonts/hardinge/HardingeFreeTrial.eot');
@@ -99,6 +106,15 @@ p {
   width: fit-content;
 }
 
+p2 {
+  color : black;
+  font-size: 1em;
+  font-family: 'london';
+  position: relative;
+  text-align: justify;
+  padding: 10px;
+  width: fit-content;
+}
 
 p:after {
   content: "_";
@@ -219,7 +235,69 @@ li :hover{
 #imageContainer{
 padding: 10px;
 position: relative;
+}
 
+.book {
+  position: relative;
+  display:inline-block;  
+  width: 100%;
+}
+
+.top-left-book {
+  position: absolute;
+  top: 5%;
+  width: 40%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.top-right-book {
+  position: absolute;
+  top: 5%;
+  left: 56%;
+  padding-right: 2%;
+}
+
+input,
+textarea {
+  /* To make sure that all text fields have the same font settings
+     By default, textareas have a monospace font */
+  color : black;
+  font-size: 0.75em;
+  font-family: 'london';
+  position: relative;
+  text-align: justify;
+  width: 76%;
+  background-color: transparent;
+}
+
+input:focus,
+textarea:focus {
+  /* Additional highlight for focused elements */
+  border-color: #000;
+}
+
+textarea {
+  /* Align multiline text fields with their labels */
+  vertical-align: top;
+
+  /* Provide space to type some text */
+  height: 5em;
+}
+
+
+button {
+  /* This extra margin represent roughly the same space as the space
+     between the labels and their text fields */
+     background-color: transparent;
+     background-repeat: no-repeat;
+     border: none;
+     cursor: pointer;
+     overflow: hidden;
+     outline: none;
+     font-size: 1.2em;
+     padding-left: 40%; /* same size as the label elements */
+     margin-top: 10px;
 }
 
 iframe {
