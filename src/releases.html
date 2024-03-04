@@ -111,30 +111,29 @@
                         <div class="container" id="imageContainer">
                             <div class="container" id="textBoxDescription">
                                 <h3> Skin Ship Edits vol. 1 1</h3>
-                                <p id="type-text-2"></p>
+                                <p id="type-text-4"></p>
                                     <script>
                                         var hold_fire_len = txt_0.length + txt.length
                                         var new_text = "The DREADKNOUGHT has placed a high bounty on any or all members of the SKIN SHIP that can be brought to justice. JIRE is in pursuit, do not approach. ";
-                                        var k = 0;
-                                        // var l = 0;
-                                        var m = 0;
+                                        var k4 = 0;
+                                        var l4 = 0;
                                         
-                                        function typeMyText2(txt, hold_fire_len, speed, getElementID) {
-                                            if (k < hold_fire_len) {
-                                                k++;
-                                                setTimeout(typeMyText2, speed*(5/4));
+                                        
+                                        function typeMyText4(txt, hold_fire_len, speed) {
+                                            if (k4 < hold_fire_len) {
+                                                k4++;
+                                                setTimeout(typeMyText4, speed*(5/4));
                                             }
-                                            var l = 0;
-                                            if (k >= (hold_fire_len)) {
-                                                if (l < txt.length) {
-                                                    document.getElementById(getElementID).innerHTML += txt.charAt(l);
-                                                    l++;
-                                                    setTimeout(typeMyText2, speed);
+                                            if (k4 >= (hold_fire_len)) {
+                                                if (l4 < txt.length) {
+                                                    document.getElementById("type-text-4").innerHTML += txt.charAt(l);
+                                                    l4++;
+                                                    setTimeout(typeMyText4, speed);
                                                     }
                                             }
                                         }
                                         
-                                        typeMyText2(new_text, hold_fire_len, speed, "type-text-2");
+                                        typeMyText4(new_text, hold_fire_len, speed);
 
                                     
                                         
@@ -170,14 +169,43 @@
                             <div class="container" id="imageContainer">
                                 <div class="container" id="textBoxDescription">
                                     <h3> SODAA Decentralised Compilation Volume 1</h3>
-                                    <p id="type-text-10"></p>
+                                    <p id="type-text-2"></p>
                                         <script>
                                             var hold_fire_len = txt_0.length + txt.length
                                             var txt_2 = "Patrons of the Bay Orc Tavern joined forces with SODAA for our latest release. ";
                                             var txt_3 = "Includes a remix from our very own man dog hybrid, scud.";
+                                            var k = 0;
+                                            var l = 0;
+                                            var m = 0;
+                                       
                                             
-                                            typeMyText2(txt_2, hold_fire_len, speed,"type-text-10" );
+                                            typeMyText2();
+
                                         
+                                            function typeMyText2() {
+                                                if (k < hold_fire_len) {
+                                                    k++;
+                                                    setTimeout(typeMyText2, speed*(5/4));
+                                                }
+                                                if (k >= (txt.length + txt_0.length)) {
+                                                    if (l < txt_2.length) {
+                                                        document.getElementById("type-text-2").innerHTML += txt_2.charAt(l);
+                                                        l++;
+                                                        setTimeout(typeMyText2, speed);
+                                                        }
+                                                    else if (l < (txt_2.length * 2)){
+                                                        l++;
+                                                        setTimeout(typeMyText2, break_speed);
+                                                        }
+                                                    if (l >= (txt_2.length * 2)){
+                                                        if (m < txt_3.length) {
+                                                            document.getElementById("type-text-2").innerHTML += txt_3.charAt(m);
+                                                            m++;
+                                                            setTimeout(typeMyText2, speed);
+                                                        }
+                                                    }
+                                                }
+                                            }
                                         </script>
                     
                                 </div>
