@@ -85,7 +85,65 @@
                          }
                 
                      </script>
-                  
+                 
+                </div>
+                <div class="columnImgContainer">
+                <h3> Releases</h3>
+                <div class="row">
+                    <div class="column">
+                        <div class="container" id="imageContainer">
+                            <a href= 'https://3swordsrepublic.bandcamp.com/album/skin-ship-edits-vol-1' target="_blank">
+                                <div class="hvrbox">
+                                    <img src='Images2/Releases/Skin Ship FINAL Artwork.png' id="radioImage">
+                                    <div class="hvrbox-layer_top">
+                                            <div class="hvrbox-text"> <h4> Artwork by Jamie Hyett </h4></div>
+                                            <div class="hvrbox-text_mobile">
+                                                <h4> Skin Ship Edits vol. 1 </h4>
+                                            The DREADKNOUGHT has placed a high bounty on any or all members of the SKIN SHIP 
+                                            that can be brought to justice. JIRE is in pursuit, do not approach. 
+                                            </div>
+                                       </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="container" id="imageContainer">
+                            <div class="container" id="textBoxDescription">
+                                <h3> Skin Ship Edits vol. 1 1</h3>
+                                <p id="type-text-2"></p>
+                                    <script>
+                                        var hold_fire_len = txt_0.length + txt.length
+                                        var new_text = "The DREADKNOUGHT has placed a high bounty on any or all members of the SKIN SHIP that can be brought to justice. JIRE is in pursuit, do not approach. ";
+                                        var k = 0;
+                                        var l = 0;
+                                        var m = 0;
+                                        
+                                        function typeMyText2(txt, hold_fire_len, speed) {
+                                            if (k < hold_fire_len) {
+                                                k++;
+                                                setTimeout(typeMyText2, speed*(5/4));
+                                            }
+                                            if (k >= (hold_fire_len)) {
+                                                if (l < txt.length) {
+                                                    document.getElementById("type-text-2").innerHTML += txt.charAt(l);
+                                                    l++;
+                                                    setTimeout(typeMyText2, speed);
+                                                    }
+                                            }
+                                        }
+                                        
+                                        typeMyText2(new_text, hold_fire_len, speed);
+
+                                    
+                                        
+                                    </script>
+                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                  </div>
                     <div class="columnImgContainer">
                     <h3> Releases</h3>
