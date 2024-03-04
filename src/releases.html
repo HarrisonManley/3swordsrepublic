@@ -116,7 +116,7 @@
                                         var hold_fire_len = txt_0.length + txt.length
                                         var new_text = "The DREADKNOUGHT has placed a high bounty on any or all members of the SKIN SHIP that can be brought to justice. JIRE is in pursuit, do not approach. ";
                                         var k = 0;
-                                        var l = 0;
+                                        // var l = 0;
                                         var m = 0;
                                         
                                         function typeMyText2(txt, hold_fire_len, speed) {
@@ -124,6 +124,7 @@
                                                 k++;
                                                 setTimeout(typeMyText2, speed*(5/4));
                                             }
+                                            var l = 0;
                                             if (k >= (hold_fire_len)) {
                                                 if (l < txt.length) {
                                                     document.getElementById("type-text-2").innerHTML += txt.charAt(l);
@@ -174,11 +175,8 @@
                                             var hold_fire_len = txt_0.length + txt.length
                                             var txt_2 = "Patrons of the Bay Orc Tavern joined forces with SODAA for our latest release. ";
                                             var txt_3 = "Includes a remix from our very own man dog hybrid, scud.";
-                                        
-                                       
                                             
                                             typeMyText2(txt_2, hold_fire_len, speed);
-
                                         
                                         </script>
                     
