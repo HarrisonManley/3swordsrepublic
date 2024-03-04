@@ -179,33 +179,9 @@
                                             var m = 0;
                                        
                                             
-                                            typeMyText2();
+                                            typeMyText2(txt_2, hold_fire_len, speed);
 
                                         
-                                            function typeMyText2() {
-                                                if (k < hold_fire_len) {
-                                                    k++;
-                                                    setTimeout(typeMyText2, speed*(5/4));
-                                                }
-                                                if (k >= (txt.length + txt_0.length)) {
-                                                    if (l < txt_2.length) {
-                                                        document.getElementById("type-text-2").innerHTML += txt_2.charAt(l);
-                                                        l++;
-                                                        setTimeout(typeMyText2, speed);
-                                                        }
-                                                    else if (l < (txt_2.length * 2)){
-                                                        l++;
-                                                        setTimeout(typeMyText2, break_speed);
-                                                        }
-                                                    if (l >= (txt_2.length * 2)){
-                                                        if (m < txt_3.length) {
-                                                            document.getElementById("type-text-2").innerHTML += txt_3.charAt(m);
-                                                            m++;
-                                                            setTimeout(typeMyText2, speed);
-                                                        }
-                                                    }
-                                                }
-                                            }
                                         </script>
                     
                                 </div>
