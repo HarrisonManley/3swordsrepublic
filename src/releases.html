@@ -119,7 +119,7 @@
                                         // var l = 0;
                                         var m = 0;
                                         
-                                        function typeMyText2(txt, hold_fire_len, speed) {
+                                        function typeMyText2(txt, hold_fire_len, speed, getElementID) {
                                             if (k < hold_fire_len) {
                                                 k++;
                                                 setTimeout(typeMyText2, speed*(5/4));
@@ -127,14 +127,14 @@
                                             var l = 0;
                                             if (k >= (hold_fire_len)) {
                                                 if (l < txt.length) {
-                                                    document.getElementById("type-text-2").innerHTML += txt.charAt(l);
+                                                    document.getElementById(getElementID).innerHTML += txt.charAt(l);
                                                     l++;
                                                     setTimeout(typeMyText2, speed);
                                                     }
                                             }
                                         }
                                         
-                                        typeMyText2(new_text, hold_fire_len, speed);
+                                        typeMyText2(new_text, hold_fire_len, speed, "type-text-2");
 
                                     
                                         
@@ -170,13 +170,13 @@
                             <div class="container" id="imageContainer">
                                 <div class="container" id="textBoxDescription">
                                     <h3> SODAA Decentralised Compilation Volume 1</h3>
-                                    <p id="type-text-2"></p>
+                                    <p id="type-text-10"></p>
                                         <script>
                                             var hold_fire_len = txt_0.length + txt.length
                                             var txt_2 = "Patrons of the Bay Orc Tavern joined forces with SODAA for our latest release. ";
                                             var txt_3 = "Includes a remix from our very own man dog hybrid, scud.";
                                             
-                                            typeMyText2(txt_2, hold_fire_len, speed);
+                                            typeMyText2(txt_2, hold_fire_len, speed,"type-text-10" );
                                         
                                         </script>
                     
