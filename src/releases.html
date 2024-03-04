@@ -118,22 +118,23 @@
                                         var k4 = 0;
                                         var l4 = 0;
                                         
+                                        typeMyText4();
                                         
-                                        function typeMyText4(txt, hold_fire_len, speed) {
+                                        function typeMyText4() {
                                             if (k4 < hold_fire_len) {
                                                 k4++;
                                                 setTimeout(typeMyText4, speed*(5/4));
                                             }
                                             if (k4 >= (hold_fire_len)) {
-                                                if (l4 < txt.length) {
-                                                    document.getElementById("type-text-4").innerHTML += txt.charAt(l);
+                                                if (l4 < new_text.length) {
+                                                    document.getElementById("type-text-4").innerHTML += new_text.charAt(l);
                                                     l4++;
                                                     setTimeout(typeMyText4, speed);
                                                     }
                                             }
                                         }
                                         
-                                        typeMyText4(new_text, hold_fire_len, speed);
+                                        
 
                                     
                                         
