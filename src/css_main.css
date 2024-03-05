@@ -346,8 +346,8 @@ opacity: 1;
   font-size: 0.75em;
   display: inline-block;
   position: absolute;
-  top: 40%;
-  left: 45%;
+  /* top: 40%;
+  left: 45%; */
   text-align: justify;
   color: #fff;
   -moz-transform: translate(-50%, -50%);
