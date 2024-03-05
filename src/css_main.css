@@ -285,20 +285,18 @@ vertical-align: middle;
 
 /* responsive layout */
 
-
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1000px) {
   .column {
     flex: 50%;
     max-width: 50%;
   } 
   }
-  @media screen and (max-width: 200px) {
+  @media screen and (max-width: 1000px) {
   .column {
     flex: 100%;
     max-width: 100%;
   }
   }
-
 
 
 /* Hover box Stuff */
