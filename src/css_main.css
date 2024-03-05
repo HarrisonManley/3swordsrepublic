@@ -286,18 +286,18 @@ vertical-align: middle;
 /* responsive layout */
 
 
-@media screen and (max-width: 1200px) {
-.column {
-  flex: 50%;
-  max-width: 50%;
-} 
-}
 @media screen and (max-width: 500px) {
-.column {
-  flex: 100%;
-  max-width: 100%;
-}
-}
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  } 
+  }
+  @media screen and (max-width: 200px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  }
 
 
 
