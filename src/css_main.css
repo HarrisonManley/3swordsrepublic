@@ -99,6 +99,12 @@ p {
   width: fit-content;
 }
 
+p2 {
+  color : white;
+  font-size: 0.75em;
+  font-family: 'larabie';
+}
+
 
 p:after {
   content: "_";
@@ -344,14 +350,16 @@ opacity: 1;
   font-size: 0.75em;
   display: inline-block;
   position: absolute;
+  padding-left: 10%;
+  padding-right: 10%;
   /* top: 40%;
   left: 45%; */
   text-align: justify;
   color: #fff;
-  -moz-transform: translate(-50%, -50%);
+  /* -moz-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
 }
 .hvrbox-text_mobile {
 font-size: 0.75em;
